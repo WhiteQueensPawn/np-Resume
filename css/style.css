@@ -1,0 +1,298 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+.education-entry, .work-entry, .project-entry {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 25px;
+}
+
+#education h3 {
+  color: #999999;
+}
+
+
+h1 {
+
+  font-size: 40px;
+  color: #fff;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-style: bold;
+  font-size: 24px;
+  color: #999999;
+  line-height: 29px;
+  padding: 10px;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #000000;
+  line-height: 22px;
+}
+
+h4 {
+  font-style: bold;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 17px;
+}
+
+h2, h3, h4, h5 {
+  padding:10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  float: left;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  float: right;
+
+}
+
+p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 21px;
+}
+
+a {
+  color: #1199C3;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.welcome-message {
+  font-style: italic;
+  font-size: 18px;
+  color: #F3F3F3;
+  line-height: 28px;
+}
+
+#skillsH3 {
+  color: #fff;
+  display: none;
+  border-bottom: 2px solid #fff;
+  width: 88%;
+  margin: 10px 0 0 21px;
+}
+
+#skills {
+  display: none;
+}
+
+.orange {
+  background-color: #fff;
+}
+
+.orange-text {
+  color: #fff;
+}
+
+.white-text {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.gray {
+  background-color: #fff;
+  border-bottom: 1px solid #dedee7;
+  clear:both;
+  padding: 25px;
+}
+
+.dark-gray {
+  background-color: #4A4A4A;
+}
+
+#projects {
+  padding: 25px;
+  border-bottom: 1px solid #dedee7;
+}
+
+/* TODO: Replace with image later */
+
+#header {
+  background: url(../images/header-bg.jpg);
+  overflow: hidden;
+  background-size: cover;
+}
+
+#header span {
+  color: #fff;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.center-content {
+  padding: 5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  padding: 10px;
+}
+
+.biopic {
+  float: left;
+  margin: 10px 10px 0 0;
+  width: 200px;
+  display: none;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+#header img {
+  padding: 0;
+}
+
+
+/* Bar chart stuff */
+.chart div {
+  font: 10px sans-serif;
+  background-color: #4A4A4A;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  height: 12px;
+  color: white;
+  display: inline-block;
+}
+
+span {
+  padding: 5px;
+}
+
+#letsConnect {
+  text-align: center;
+  margin: 0 auto;
+  border-top: 1px solid #59c3ff;
+  border-radius: 4px;
+  color: #59c3ff;
+}
+
+#letsConnect h2 {
+  font-weight: 200;
+  color: #59c3ff;
+}
+
+#footerContacts.flex-box {
+  background: #fff
+}
+
+@media only screen and (max-width: 1024px) {
+  #letsConnect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #letsConnect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 87%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+  #skillsH3,
+  #skills,
+  .biopic {
+    display: block;
+  }
+}
+
+/* body changes */
+
+.project-entry img {
+  max-width: 240px;
+  max-width: 240px;
+  border: 1px solid #D7D3D3;
+  margin: 10px;
+  width: 100%;
+}
+
+#biopic {
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+
+
+#main button {
+  background: #fff;
+  border: 1px solid #59c3ff;
+  padding: 13px;
+  margin: 0 auto 46px auto;
+  color: #59c3ff;
+  display: flex;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+#topContacts {
+  background: rgba(0, 0, 0, 0.42);
+  margin-bottom: 37px;
+}
+
+
+

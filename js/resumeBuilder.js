@@ -1,3 +1,5 @@
+// AJAX Online Resume, Udacity style
+//// courtesy of the magnet
 
 $(document).click(function(loc) { 
 	var x = loc.pageX;
@@ -5,7 +7,7 @@ $(document).click(function(loc) {
 	logClicks(x,y);
 });
 
-//var skills = ["awesomeness", "programming", "dancing"];
+var skills = ["design", "management", "programming", "dancing"];
 
 var bio = {
 	"name" : "Rob Rosario",
@@ -32,7 +34,7 @@ var education = {
 		"url" : "http://example.com",
 		"location" : "Janesville"
 	  }],
-	  "online" : [ {
+	  "online" : [{
 	  	"title" : "Front-End Developer Certification",
 		"school" : "Udacity",
 		"dates" : "2014",
@@ -43,12 +45,12 @@ var education = {
 
 var work = {
 	"jobs" : [{
-		"employer" : "Twixxies",
-		"title" : "Co-Founder",
-		"dates" : "August 2013 - Now",
-		"description" : "Twixxies is the apex of technology and accessibility.  The mission is to bring technology that empowers businesses today and tomorrow.  We do this by offering app hosting, app themes, and experts to help your brand go mobile.  Twixxies technology is focused on building towards future technology that will easily intergrate with our clients needs.",
+		"employer" : " (IT/Infrastructure/Security; Consulation, Assessment, Design, Repair, Admin, Hosting, and R&D)",
+		"title" : "Founder, Owner",
+		"dates" : "August 2014 - Now",
+		"description" : "Twixxies is the apex of technology and accessibility.  The mis",
 		"location" : "Los Angeles"
-	}, {
+	},{
 		"employer" : "Michael Kors",
 		"title" : "Brand Manager",
 		"dates" : "June 2012 - August 2013",
@@ -68,8 +70,8 @@ var projects = {
 	],
 };
 
-projects.display = function () {
-	for (project in projects.projects) {
+projects.display = function(){
+	for (project in projects.projects){
 		$("#projects").append(HTMLprojectStart);
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
 		$(".project-entry:last").append(formattedTitle);
@@ -88,7 +90,7 @@ projects.display = function () {
 
 projects.display();
 
-education.display = function () {
+education.display = function(){
 	for (school in education.schools) {
 	$("#education").append(HTMLschoolStart );
 		var formattedSchool = HTMLschoolName.replace("%data%", education.schools[school].name);
